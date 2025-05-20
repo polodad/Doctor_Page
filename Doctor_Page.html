@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Valeria Montes | Medicina Estética</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #5a4a42;
+        }
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,248,240,0.7));
+        }
+        .gold-text {
+            color: #d4af37;
+        }
+        .gold-border {
+            border-color: #d4af37;
+        }
+        .bg-skin {
+            background-color: #fff8f0;
+        }
+        .treatment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .testimonial-card {
+            background-color: rgba(255,255,255,0.9);
+            backdrop-filter: blur(5px);
+        }
+        .before-after-container {
+            perspective: 1000px;
+        }
+        .before-after-img {
+            transition: all 0.5s ease;
+        }
+        .before-after-img:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="text-2xl title-font gold-text">Dra. Valeria Montes</div>
+                    <div class="ml-2 text-xs text-gray-500">MEDICINA ESTÉTICA</div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="text-gray-700 hover:text-amber-800 transition">Inicio</a>
+                    <a href="#sobre-mi" class="text-gray-700 hover:text-amber-800 transition">Sobre mí</a>
+                    <a href="#servicios" class="text-gray-700 hover:text-amber-800 transition">Servicios</a>
+                    <a href="#galeria" class="text-gray-700 hover:text-amber-800 transition">Galería</a>
+                    <a href="#testimonios" class="text-gray-700 hover:text-amber-800 transition">Testimonios</a>
+                    <a href="#contacto" class="text-gray-700 hover:text-amber-800 transition">Contacto</a>
+                </nav>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28 relative">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1579684385127-1ef15dded118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'); opacity: 0.7;"></div>
+        <div class="container mx-auto px-6 relative">
+            <div class="max-w-2xl hero-gradient p-8 md:p-12 rounded-lg">
+                <h1 class="text-4xl md:text-5xl font-bold title-font mb-4">Rejuvenecimiento facial <span class="gold-text">natural</span> y personalizado</h1>
+                <p class="text-lg mb-8">Tratamientos mínimamente invasivos para realzar tu belleza natural con resultados inmediatos y sin tiempo de recuperación.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contacto" class="bg-amber-800 hover:bg-amber-700 text-white px-8 py-3 rounded-full text-center font-medium transition duration-300">Agenda tu cita hoy</a>
+                    <a href="#servicios" class="border-2 gold-border text-amber-800 hover:bg-amber-50 px-8 py-3 rounded-full text-center font-medium transition duration-300">Conoce nuestros tratamientos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Section -->
+    <section class="py-16 bg-skin">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl title-font text-center mb-12">Transformaciones <span class="gold-text">reales</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 before-after-container">
+                <div class="bg-white p-6 rounded-lg shadow-md before-after-img">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">Antes</h3>
+                        <h3 class="text-xl font-semibold gold-text">Después</h3>
+                    </div>
+                    <div class="relative h-64 md:h-80 bg-gray-200 rounded overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');"></div>
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80'); clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-1 bg-white h-full"></div>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-600">Tratamiento combinado de Botox y rellenos faciales - Resultados a los 7 días</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md before-after-img">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold">Antes</h3>
+                        <h3 class="text-xl font-semibold gold-text">Después</h3>
+                    </div>
+                    <div class="relative h-64 md:h-80 bg-gray-200 rounded overflow-hidden">
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1551836022-8b4c5a93f8a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');"></div>
+                        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80'); clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-1 bg-white h-full"></div>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-600">Hilo tensores y radiofrecuencia - Resultados a los 30 días</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Doctor Section -->
+    <section id="sobre-mi" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Dra. Valeria Montes" class="rounded-lg shadow-xl w-full h-auto max-h-96 object-cover">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl title-font mb-6">Sobre la <span class="gold-text">Dra. Valeria Montes</span></h2>
+                    <p class="text-lg mb-6">Especialista en Medicina Estética con más de 15 años de experiencia ayudando a pacientes a recuperar la juventud y vitalidad de su piel con técnicas avanzadas y mínimamente invasivas.</p>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3 gold-text">Formación académica</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-graduation-cap mt-1 mr-3 gold-text"></i>
+                                <span>Médico Cirujano - Universidad Nacional Autónoma de México</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-graduation-cap mt-1 mr-3 gold-text"></i>
+                                <span>Especialidad en Dermatología - Instituto Nacional de Ciencias Médicas y Nutrición</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-graduation-cap mt-1 mr-3 gold-text"></i>
+                                <span>Diplomado en Medicina Estética y Antienvejecimiento - Universidad de Barcelona</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-semibold mb-3 gold-text">Certificaciones</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-certificate mt-1 mr-3 gold-text"></i>
+                                <span>Certificada por la Sociedad Internacional de Medicina Estética</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-certificate mt-1 mr-3 gold-text"></i>
+                                <span>Instructor autorizado de toxina botulínica (Allergan)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-certificate mt-1 mr-3 gold-text"></i>
+                                <span>Miembro activo de la Academia Americana de Medicina Estética</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-16 bg-skin">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl title-font text-center mb-4">Nuestros <span class="gold-text">tratamientos</span></h2>
+            <p class="text-center text-lg mb-12 max-w-2xl mx-auto">Procedimientos personalizados para cada paciente, realizados con los más altos estándares de calidad y seguridad.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Botox Card -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md treatment-card transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl title-font mb-3 gold-text">Toxina Botulínica (Botox)</h3>
+                        <p class="mb-4">Suaviza líneas de expresión y arrugas dinámicas en frente, entrecejo y patas de gallo con resultados naturales.</p>
+                        <ul class="mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 gold-text"></i>
+                                <span>Duración: 4-6 meses</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 gold-text"></i>
+                                <span>Procedimiento: 15-20 minutos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 gold-text"></i>
+                                <span>Sin tiempo de recuperación</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-semibold">Desde $3,500 MXN</span>
+                            <a href="#contacto" class="bg-amber-800 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium transition duration-300">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fillers Card -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md treatment-card transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=684&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl title-font mb-3 gold-text">Rellenos Faciales</h3>
+                        <p class="mb-4">Restaura volumen perdido, define pómulos, labios y mejora el contorno facial con ácido hialurónico de última generación.</p>
+                        <ul class="mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 gold-text"></i>
+                                <span>Duración: 9-18 meses</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 gold-text"></i>
+                                <span>Procedimiento: 30-45 minutos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 gold-text"></i>
+                                <span>Resultados inmediatos</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-semibold">Desde $5,800 MXN</span>
+                            <a href="#contacto" class="bg-amber-800 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium transition duration-300">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rejuvenation Card -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md treatment-card transition duration-300">
+                    <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c232b3a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80');"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl title-font mb-3 gold-text">Rejuvenecimiento Facial</h3>
+                        <p class="mb-4">Tratamiento combinado personalizado que incluye hilos tensores, radiofrecuencia y plasma rico en plaquetas para un lifting natural.</p>
+                        <ul class="mb-4 space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 gold-text"></i>
+                                <span>Duración: 1-2 años</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 gold-text"></i>
+                                <span>Procedimiento: 60-90 minutos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-2 gold-text"></i>
+                                <span>Estimula colágeno natural</span>
+                            </li>
+                        </ul>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-semibold">Desde $12,000 MXN</span>
+                            <a href="#contacto" class="bg-amber-800 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-medium transition duration-300">Agendar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#contacto" class="inline-block bg-amber-800 hover:bg-amber-700 text-white px-8 py-3 rounded-full font-medium transition duration-300">Consulta por nuestros paquetes combinados</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl title-font text-center mb-12">Galería de <span class="gold-text">resultados</span></h2>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="relative group overflow-hidden rounded-lg h-64">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Antes y después 1" class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-lg font-medium">Botox + Rellenos</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg h-64">
+                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80" alt="Antes y después 2" class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-lg font-medium">Rejuvenecimiento completo</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg h-64">
+                    <img src="https://images.unsplash.com/photo-1551836022-8b4c5a93f8a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Antes y después 3" class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-lg font-medium">Hilos tensores</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg h-64">
+                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c232b3a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Antes y después 4" class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-lg font-medium">Lifting sin cirugía</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg h-64">
+                    <img src="https://images.unsplash.com/photo-1579684453423-f84349ef60b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=684&q=80" alt="Antes y después 5" class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-lg font-medium">Relleno de labios</span>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden rounded-lg h-64">
+                    <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Antes y después 6" class="w-full h-full object-cover transition duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                        <span class="text-white text-lg font-medium">Botox facial</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="mb-6">¿Quieres ver más resultados reales de nuestros pacientes?</p>
+                <a href="#contacto" class="inline-block border-2 gold-border text-amber-800 hover:bg-amber-50 px-8 py-3 rounded-full font-medium transition duration-300">Solicita una consulta personalizada</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-16 bg-skin">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl title-font text-center mb-12">Lo que dicen <span class="gold-text">nuestros pacientes</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-800 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"La Dra. Montes es increíblemente profesional y detallista. Mis resultados con Botox superaron todas mis expectativas. Me siento renovada pero sigo siendo yo misma. ¡Totalmente recomendada!"</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cliente 1" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold">Ana Rodríguez</h4>
+                            <p class="text-sm text-gray-600">Paciente desde 2018</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-800 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"Después de probar varios lugares, finalmente encontré a la Dra. Montes. Su técnica es impecable y los resultados son naturales. El relleno en mis pómulos me devolvió la estructura facial que había perdido con los años."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Cliente 2" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold">María Fernández</h4>
+                            <p class="text-sm text-gray-600">Paciente desde 2020</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-amber-800 text-2xl mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"El tratamiento de rejuvenecimiento facial combinado cambió completamente mi apariencia. Mis amigos no podían creer lo bien que me veía sin haber pasado por cirugía. La Dra. es una artista en lo que hace."</p>
+                    <div class="flex items-center">
+                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80" alt="Cliente 3" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold">Laura Gómez</h4>
+                            <p class="text-sm text-gray-600">Paciente desde 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl md:text-4xl title-font mb-6">Agenda tu <span class="gold-text">consulta</span></h2>
+                    <p class="text-lg mb-8">Completa el formulario y nos pondremos en contacto contigo para confirmar tu cita y resolver cualquier duda que puedas tener sobre nuestros tratamientos.</p>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4 gold-text">Información de contacto</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-4 gold-text"></i>
+                                <div>
+                                    <h4 class="font-medium">Consultorio</h4>
+                                    <p class="text-gray-600">Av. Paseo de la Reforma 123, Piso 8, Col. Juárez, CDMX</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt mt-1 mr-4 gold-text"></i>
+                                <div>
+                                    <h4 class="font-medium
+</html>
